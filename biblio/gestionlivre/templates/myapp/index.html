@@ -1,0 +1,17 @@
+{%load static%}
+<!doctype html>
+<head>
+    <meta charset="utf-8" >
+    <title>Test 1</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+<body>
+    <div class="container">
+     <h2>My First Application</h2>
+    
+    {% for i in listbooks %}
+     <a href="{% url 'htmlBook' i.id %}">Books{{ i.id }}</a>
+    {% endfor %}
+    </div>
+</body>
+</html>
