@@ -1,0 +1,19 @@
+{%load static%}
+<!doctype html>
+<head>
+    <meta charset="utf-8" >
+    <title>Book</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+<body>
+    <div class="container">
+        <h1>Book ID={{details.id }}</h1>
+        <h1>Nom= {{details.title}}</h1>
+        <h1>author= {{details.author.firstname }}</h1>
+        <h1>price= {{details.price }}</h1>
+        <h1>summary= {{details.summary }}</h1>
+        <h1>price= {{details.price }}</h1>
+        <h1>category= {{details.category }}</h1>
+       </div>
+</body>
+</html>
