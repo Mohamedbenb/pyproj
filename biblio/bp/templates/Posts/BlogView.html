@@ -10,7 +10,9 @@
      <h2>My First Application</h2>
     
     {% for i in posts %}
-     <a href="{% url 'updatehtml' i.id %}">posts{{ i.id }}</a>
+    
+     <a href="{% url 'bp:updatehtml' i.id %}">posts{{ i.id }}</a> <a href="{% url 'bp:deletehtml' i.id %}">delete</a>
+     
     {% endfor %}
     </div>
 </body>

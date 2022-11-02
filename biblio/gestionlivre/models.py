@@ -30,14 +30,7 @@ class Book (models.Model):
     category = models.CharField(max_length=2,
                                 choices = category_choices,
                                 default=Aventure)
+    image=models.ImageField(upload_to="static/")
     def __str__(self):
         return self.title
     
-class BlogPost (models.Model):
-        
-    title = models.CharField(max_length=255)
-    author = models.ForeignKey(Author, on_delete=models.CASCADE)
-    content = models.TextField(blank=True)
-    created_on = models.DateTimeField(auto_now_add=True)
-    def __str__(self):
-        return self.title

@@ -22,4 +22,5 @@ path("admin/", admin.site.urls),
 path("",index),
 path("app/", include('gestionlivre.urls')),
 path("posts/", include('bp.urls')),
+path("weather/", include('weather.urls')),
 ]
